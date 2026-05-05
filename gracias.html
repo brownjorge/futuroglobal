@@ -27,7 +27,13 @@
 .site-footer{background:var(--navy);color:rgba(255,255,255,0.6);}.footer-main{max-width:var(--max-width);margin:0 auto;padding:64px 40px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;}.footer-brand p{font-size:0.875rem;line-height:1.7;margin-top:20px;max-width:300px;}.footer-col h4{font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:20px;}.footer-col a{display:block;font-size:0.875rem;color:rgba(255,255,255,0.6);padding:6px 0;transition:color .25s;}.footer-col a:hover{color:var(--gold);}.footer-bottom{max-width:var(--max-width);margin:0 auto;padding:24px 40px;border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;}
 @media(max-width:900px){.header-nav{display:none}.footer-main{grid-template-columns:1fr 1fr;}.legal-content{padding:58px 24px 70px}.legal-hero{padding:74px 24px 56px;}}@media(max-width:600px){.footer-main{grid-template-columns:1fr;}.footer-bottom{display:block;}.legal-table{display:block;overflow-x:auto;}}
 </style>
-</head>
+<style id="language-switcher-style">
+.lang-switcher{display:flex;align-items:center;gap:7px;margin-left:18px;font-size:.76rem;font-weight:800;letter-spacing:.06em;color:var(--mid-gray);}
+.lang-switcher a{color:var(--mid-gray)!important;text-decoration:none!important;padding:4px 0;}
+.lang-switcher a.active{color:var(--orange)!important;}
+.lang-switcher span{color:rgba(1,2,51,.24);}
+@media(max-width:900px){.lang-switcher{display:none;}}
+</style></head>
 <body>
 <header class="site-header" id="siteHeader"><div class="header-inner">
 <a class="header-logo" href="index.html">Global Institute for the Future</a>
@@ -39,7 +45,7 @@
 <a href="consultoria.html">Consultoría</a>
 <a class="nav-cta" href="contacto.html">Contacto</a>
 </nav>
-</div></header>
+<div class="lang-switcher"><a class="active" href="index.html">ES</a><span>|</span><a href="en/thank-you.html">EN</a><span>|</span><a href="pt/obrigado.html">PT</a></div></div></header>
 <section class="legal-hero"><div class="legal-hero-inner"><span class="section-label">Formulario recibido</span><h1>Gracias</h1><p>Hemos recibido tu información correctamente.</p></div></section>
 <div class="color-stripe"><div class="cs-blue"></div><div class="cs-orange"></div><div class="cs-teal"></div><div class="cs-gold"></div></div>
 <main class="legal-content">

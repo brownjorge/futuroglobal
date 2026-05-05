@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="pt"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Início | Global Institute for the Future</title><meta content="Inteligência estratégica para um mundo em transformação." name="description"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap" rel="stylesheet"/><link href="../assets/img/favicon.ico" rel="icon" sizes="any"/><link href="../assets/img/favicon.png" rel="icon" type="image/png"/><link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/><link href="../assets/img/site.webmanifest" rel="manifest"/><meta content="#010233" name="theme-color"/><style>
+<html lang="pt"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Início | Global Institute for the Future</title><meta content="Plataforma sem fins lucrativos sediada na Espanha para inteligência estratégica em um mundo em transformação." name="description"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap" rel="stylesheet"/><link href="../assets/img/favicon.ico" rel="icon" sizes="any"/><link href="../assets/img/favicon.png" rel="icon" type="image/png"/><link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/><link href="../assets/img/site.webmanifest" rel="manifest"/><meta content="#010233" name="theme-color"/><style>
 :root{--navy:#010233;--blue:#1212AF;--teal:#62D9C0;--orange:#F05B03;--gold:#F2B946;--white:#fff;--off:#F8F7F4;--muted:#6b7280;--max:1280px;--header-h:72px;--font:'DM Sans',Inter,Arial,sans-serif;--accent:'Playfair Display',Georgia,serif}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:var(--font);color:var(--navy);background:#fff}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 .header{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--header-h);background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(1,2,51,.06)}
@@ -61,7 +61,83 @@
 .newsletter input[type="checkbox"] {
   accent-color: var(--gold);
 }
-</style></head><body><header class="header"><nav class="nav"><a class="brand" href="index.html"><img alt="Global Institute for the Future" src="../assets/img/gift-logo-header.png"/></a><div class="links"><a class="active" href="index.html">Início</a><a class="" href="sobre.html">Sobre</a><a class="" href="cumbres.html">Cúpulas</a><a class="" href="think-tank.html">Think Tank</a><a class="" href="consultoria.html">Consultoria</a><a class="cta" href="contato.html">Contato</a></div><div class="lang"><a href="../index.html">ES</a><span>|</span><a href="../en/index.html">EN</a><span>|</span><a class="active" href="index.html">PT</a></div></nav></header><section class="hero"><div class="hero-inner"><div><span class="kicker">Inteligência estratégica para o futuro</span><h1>Antecipar, conectar e liderar as grandes <em>transições globais</em></h1><p>O Global Institute for the Future é uma plataforma internacional de pensamento estratégico e ação aplicada. Geramos conhecimento, articulamos diálogo estratégico e preparamos decisões para um mundo em transformação.</p><div class="buttons"><a class="btn btn-primary" href="sobre.html">Sobre a GIFT →</a><a class="btn btn-secondary" href="cumbres.html">Ver cúpulas</a><a class="btn btn-secondary" href="think-tank.html">Ler análises</a></div></div>
+</style>
+<style id="gift-hero-texture-v2">
+/* Stronger animated GIFT hero background: layered ribbons, texture and slow color movement */
+#page-home .hero,
+body > .hero:first-of-type{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(98,217,192,.20), transparent 28%),
+    radial-gradient(circle at 84% 16%, rgba(18,18,175,.36), transparent 34%),
+    radial-gradient(circle at 68% 88%, rgba(240,91,3,.20), transparent 35%),
+    linear-gradient(165deg,#010233 0%,#050840 45%,#0b0758 100%)!important;
+}
+#page-home .hero::before,
+body > .hero:first-of-type::before{
+  content:"";
+  position:absolute;
+  inset:-45%;
+  z-index:0;
+  pointer-events:none;
+  opacity:.95;
+  filter:blur(34px) saturate(1.28);
+  background:
+    conic-gradient(from 0deg at 50% 50%,
+      transparent 0deg,
+      rgba(18,18,175,.42) 38deg,
+      transparent 78deg,
+      rgba(98,217,192,.34) 126deg,
+      transparent 174deg,
+      rgba(240,91,3,.34) 226deg,
+      transparent 282deg,
+      rgba(242,185,70,.26) 322deg,
+      transparent 360deg);
+  animation:giftRibbonOrbitStrong 34s linear infinite;
+}
+#page-home .hero::after,
+body > .hero:first-of-type::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  opacity:.86;
+  background:
+    linear-gradient(120deg, transparent 0%, rgba(98,217,192,.16) 18%, transparent 32%),
+    linear-gradient(55deg, transparent 8%, rgba(240,91,3,.16) 43%, transparent 62%),
+    linear-gradient(158deg, transparent 14%, rgba(242,185,70,.14) 53%, transparent 72%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.026) 0 1px, transparent 1px 78px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.018) 0 1px, transparent 1px 78px);
+  mix-blend-mode:screen;
+  animation:giftRibbonDriftStrong 13s ease-in-out infinite alternate;
+}
+#page-home .hero-bg,
+#page-home .hero-grid,
+#page-home .hero-content,
+body > .hero:first-of-type .hero-inner{
+  position:relative;
+  z-index:3;
+}
+@keyframes giftRibbonOrbitStrong{
+  from{transform:rotate(0deg) scale(1.04);}
+  to{transform:rotate(360deg) scale(1.04);}
+}
+@keyframes giftRibbonDriftStrong{
+  from{transform:translate3d(-2.5%,-1.2%,0) scale(1);opacity:.62;}
+  to{transform:translate3d(2.5%,1.2%,0) scale(1.07);opacity:.95;}
+}
+@media(max-width:900px){
+  #page-home .hero::before,
+  body > .hero:first-of-type::before{opacity:.70;animation-duration:52s;}
+  #page-home .hero::after,
+  body > .hero:first-of-type::after{opacity:.58;}
+}
+</style>
+
+</head><body><header class="header"><nav class="nav"><a class="brand" href="index.html"><img alt="Global Institute for the Future" src="../assets/img/gift-logo-header.png"/></a><div class="links"><a class="active" href="index.html">Início</a><a class="" href="sobre.html">Sobre</a><a class="" href="cumbres.html">Cúpulas</a><a class="" href="think-tank.html">Think Tank</a><a class="" href="consultoria.html">Consultoria e Formação</a><a class="cta" href="contato.html">Contato</a></div><div class="lang"><a href="../index.html">ES</a><span>|</span><a href="../en/index.html">EN</a><span>|</span><a class="active" href="index.html">PT</a></div></nav></header><section class="hero"><div class="hero-inner"><div><span class="kicker">Inteligência estratégica para o futuro</span><h1>Antecipar, conectar e liderar as grandes <em>transições globais</em></h1><p>O Global Institute for the Future é uma entidade sem fins lucrativos sediada na Espanha e uma plataforma internacional de pensamento estratégico aplicado. Geramos conhecimento, articulamos diálogo estratégico e preparamos decisões para um mundo em transformação.</p><div class="buttons"><a class="btn btn-primary" href="sobre.html">Sobre a GIFT →</a><a class="btn btn-secondary" href="cumbres.html">Ver cúpulas</a><a class="btn btn-secondary" href="think-tank.html">Ler análises</a></div></div>
 <div class="mosaic">
 <div class="tile"><img src="../assets/img/hero-curated-01.jpg"/><img src="../assets/img/hero-curated-08.jpg"/><img src="../assets/img/hero-curated-07.jpg"/></div>
 <div class="tile"><img src="../assets/img/hero-curated-02.jpg"/><img src="../assets/img/hero-curated-06.jpg"/><img src="../assets/img/hero-curated-10.jpg"/></div>
@@ -70,4 +146,4 @@
 </div></section><div class="stripe"><div></div><div></div><div></div><div></div></div>
 <section class="section section-light"><div class="section-header"><span class="label">Nossas áreas</span><h2>Três formas de compreender e transformar o que vem pela frente</h2><p class="desc">A GIFT trabalha em três linhas interconectadas: cúpulas internacionais, publicações estratégicas e consultoria/formação institucional.</p></div><div class="grid"><a class="card" href="cumbres.html"><div class="card-body"><h3>Cúpulas internacionais</h3><p>Plataformas de alto nível que reúnem governos, empresas, organismos internacionais e lideranças de pensamento.</p></div></a><a class="card" href="think-tank.html"><div class="card-body"><h3>Think Tank &amp; White Papers</h3><p>Policy papers, análise estratégica e marcos de decisão para antecipar tendências.</p></div></a><a class="card" href="consultoria.html"><div class="card-body"><h3>Consultoria e formação</h3><p>Apoiamos governos, empresas e instituições em processos de reflexão estratégica, desenho de agendas e posicionamento institucional.</p></div></a></div></section>
 <section class="section"><div class="section-header"><span class="label">Destaques</span><h2>Atividades e publicações recentes</h2></div><div class="feature"><a class="feature-main" href="cumbres/forum-futuro-turismo-iberoamerica-2026.html"><img src="../assets/img/home-ibero-group.jpg"/><div class="feature-content"><span class="label">Fórum recente</span><h3>Fórum sobre o Futuro do Turismo na Ibero-América</h3><p>Governança, competitividade e inovação como bases estratégicas para o futuro do turismo ibero-americano.</p></div></a><div class="feature-side"><a class="mini dark" href="artigos/democracia-liberal-legitimidade.html"><span class="label">Nova análise</span><h3>Democracia liberal: quando votar já não basta</h3><p>A erosão da legitimidade e a necessidade de reinventar a capacidade de decisão.</p></a><a class="mini light" href="artigos/ia-e-concentracao-de-poder.html"><span class="label">White Paper</span><h3>IA e concentração de poder</h3><p>Quando uma ferramenta se transforma em dependência: soberania tecnológica.</p></a></div></div></section>
-<section class="section section-light"><div class="section-header"><span class="label">Alianças</span><h2>Rede internacional de colaboração</h2><p class="desc">A GIFT colabora com governos, organismos internacionais, câmaras de comércio, empresas e fundações de referência.</p></div><div class="partners"><div class="partner"><img alt="" src="../assets/img/logo-onu-turismo.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-pvblic.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-incyde.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-club-madrid.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-cajasol.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-qair.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-oij.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-mhi.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-worldbank.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-idb.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-caf.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-fonplata.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-alf.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-fundacion-dieta-mediterranea.png"/></div></div></section><section class="newsletter"><h2>Inteligência estratégica no seu email</h2><p>Receba análises, publicações e convites da GIFT.</p><form action="obrigado.html" data-netlify="true" method="POST" name="newsletter-pt" netlify-honeypot="bot-field"><input name="form-name" type="hidden" value="newsletter-pt"/><p style="display:none"><label>Não preencher: <input name="bot-field"/></label></p><div class="newsletter-row"><input name="email" placeholder="voce@email.com" required="" type="email"/><button type="submit">Inscrever-se</button></div></form></section><footer class="footer"><div class="footer-inner"><div><h4>Global Institute for the Future</h4><p>Inteligência estratégica para um mundo em transformação.</p></div><div><h4>Instituto</h4><a href="sobre.html">Sobre GIFT</a><a href="contato.html">Contato</a></div><div><h4>Áreas</h4><a href="cumbres.html">Cúpulas</a><a href="think-tank.html">Think Tank</a><a href="consultoria.html">Consultoria</a></div><div><h4>Legal</h4><a href="aviso-legal.html">Aviso legal</a><a href="politica-privacidade.html">Política de privacidade</a><a href="politica-cookies.html">Política de cookies</a></div></div><div class="footer-bottom"><span>© 2026 Global Institute for the Future</span><span>www.futuroglobal.es</span></div></footer></body></html>
+<section class="section section-light"><div class="section-header"><span class="label">Alianças</span><h2>Rede internacional de colaboração</h2><p class="desc">A GIFT colabora com governos, organismos internacionais, câmaras de comércio, empresas e fundações de referência.</p></div><div class="partners"><div class="partner"><img alt="" src="../assets/img/logo-onu-turismo.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-pvblic.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-incyde.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-club-madrid.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-cajasol.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-qair.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-oij.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-mhi.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-worldbank.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-idb.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-caf.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-fonplata.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-alf.png"/></div><div class="partner"><img alt="" src="../assets/img/logo-fundacion-dieta-mediterranea.png"/></div></div></section><section class="newsletter"><h2>Inteligência estratégica no seu email</h2><p>Receba análises, publicações e convites da GIFT.</p><form action="obrigado.html" data-netlify="true" method="POST" name="newsletter-pt" netlify-honeypot="bot-field"><input name="form-name" type="hidden" value="newsletter-pt"/><p style="display:none"><label>Não preencher: <input name="bot-field"/></label></p><div class="newsletter-row"><input name="email" placeholder="voce@email.com" required="" type="email"/><button type="submit">Inscrever-se</button></div></form></section><footer class="footer"><div class="footer-inner"><div><h4>Global Institute for the Future</h4><p>Plataforma sem fins lucrativos sediada na Espanha para inteligência estratégica em um mundo em transformação.</p></div><div><h4>Instituto</h4><a href="sobre.html">Sobre GIFT</a><a href="contato.html">Contato</a></div><div><h4>Áreas</h4><a href="cumbres.html">Cúpulas</a><a href="think-tank.html">Think Tank</a><a href="consultoria.html">Consultoria e Formação</a></div><div><h4>Legal</h4><a href="aviso-legal.html">Aviso legal</a><a href="politica-privacidade.html">Política de privacidade</a><a href="politica-cookies.html">Política de cookies</a></div></div><div class="footer-bottom"><span>© 2026 Global Institute for the Future</span><span>www.futuroglobal.es</span></div></footer></body></html>

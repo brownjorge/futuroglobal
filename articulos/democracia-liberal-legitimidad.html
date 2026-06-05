@@ -320,7 +320,98 @@
     width:100%;
   }
 }
-</style></head>
+</style>
+<style id="gift-article-landing-design-fix">
+/* Refinamiento visual de landings de artículos: botón PDF y footer */
+#page-article-landing .article-landing-actions{
+  align-items:center!important;
+}
+#page-article-landing .article-landing-actions a{
+  min-width:0!important;
+  width:auto!important;
+  max-width:max-content!important;
+  padding:12px 22px!important;
+  border-radius:999px!important;
+  line-height:1!important;
+}
+#page-article-landing .article-landing-actions .primary{
+  background:#62D9C0!important;
+  color:#010233!important;
+  box-shadow:0 14px 34px rgba(98,217,192,.22)!important;
+}
+#page-article-landing .article-landing-actions .secondary{
+  background:rgba(255,255,255,.06)!important;
+  color:#fff!important;
+  border:1px solid rgba(255,255,255,.20)!important;
+}
+#page-article-landing .article-download-box{
+  background:#010233!important;
+  border:1px solid rgba(98,217,192,.18)!important;
+  box-shadow:none!important;
+  padding:22px!important;
+}
+#page-article-landing .article-download-box a{
+  width:auto!important;
+  max-width:220px!important;
+  margin:0 auto!important;
+  background:#62D9C0!important;
+  color:#010233!important;
+  padding:12px 18px!important;
+  border-radius:999px!important;
+  font-size:.9rem!important;
+}
+#page-article-landing .site-footer{
+  background:#010233!important;
+  color:#fff!important;
+  border-top:1px solid rgba(255,255,255,.10)!important;
+  padding:58px 0 42px!important;
+}
+#page-article-landing .footer-grid{
+  align-items:start!important;
+}
+#page-article-landing .footer-logo{
+  max-width:132px!important;
+  height:auto!important;
+  margin-bottom:16px!important;
+  object-fit:contain!important;
+  filter:none!important;
+}
+#page-article-landing .site-footer p{
+  max-width:360px!important;
+  color:rgba(255,255,255,.64)!important;
+  line-height:1.6!important;
+  margin:0!important;
+}
+#page-article-landing .site-footer h4{
+  color:#62D9C0!important;
+  margin:0 0 14px!important;
+  font-size:.82rem!important;
+  letter-spacing:.14em!important;
+  text-transform:uppercase!important;
+}
+#page-article-landing .site-footer a{
+  display:block!important;
+  color:rgba(255,255,255,.72)!important;
+  text-decoration:none!important;
+  margin:0 0 9px!important;
+}
+#page-article-landing .site-footer a:hover{
+  color:#F2B946!important;
+}
+@media(max-width:760px){
+  #page-article-landing .article-landing-actions{
+    align-items:flex-start!important;
+  }
+  #page-article-landing .article-landing-actions a{
+    max-width:100%!important;
+  }
+  #page-article-landing .article-download-box a{
+    max-width:100%!important;
+    width:100%!important;
+  }
+}
+</style>
+</head>
 <body id="page-article-landing">
 <header class="site-header">
 <div class="container nav-wrap">
@@ -404,9 +495,9 @@
 <footer class="site-footer">
 <div class="container footer-grid">
 <div>
-<img alt="GIFT" class="footer-logo" src="../assets/img/gift-logo-header.png">
+<img alt="GIFT" class="footer-logo" src="../assets/img/gift-logo-header.png"/>
 <p>Think tank aplicado y plataforma internacional de pensamiento estratégico.</p>
-</img></div>
+</div>
 <div>
 <h4>GIFT</h4>
 <a href="../sobre-gift.html">Sobre GIFT</a>
